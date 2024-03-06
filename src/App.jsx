@@ -42,13 +42,13 @@ function App() {
 
   return (
     <div className="h-screen bg-gradient-to-tr from-lime-400 via-emerald-500 to-teal-700 flex">
-      <div className="flex flex-col h-3/4 m-auto">
+      <div className="flex flex-col h-3/4 m-auto px-10">
         <p className="backdrop-blur-sm bg-white/30 w-40 p-3 rounded-full m-auto text-center font-medium">Putaran<br /> <span className="font-bold">x {split}</span></p>
         <div>
-          <div className="absolute w-52 m-auto">
-            <Circle percent={count * 3.034} strokeWidth={6} strokeColor="#FFF" />
+          <div className="absolute w-56 m-auto">
+            <Circle percent={count * 3.034} strokeWidth={5} strokeColor="rgb(255 255 255 / 0.5)" />
           </div>
-          <button onClick={increment} className="mx-auto w-52 h-52 backdrop-blur-sm bg-white/30 rounded-full font-bold text-5xl shadow-lg">{count}</button>
+          <button onClick={increment} className="mx-auto w-56 h-56 backdrop-blur-sm bg-white/30 rounded-full font-bold text-5xl shadow-lg">{count}</button>
         </div>
         <div className="m-auto">
           <button className="backdrop-blur-sm bg-white/30 w-40 p-3 rounded-full  font-medium" onClick={resetAll}>Reset</button>
